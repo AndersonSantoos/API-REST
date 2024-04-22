@@ -9,7 +9,6 @@ import { authenticateAdmin } from '../middleware/middlewareAdm';
 
 const router = express.Router();
 
-// Rota para registrar um administrador
 router.post('/administrators', async (req: Request, res: Response) => {
     try {
         await registerAdministrator(req, res);
